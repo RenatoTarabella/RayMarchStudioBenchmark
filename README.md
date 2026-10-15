@@ -71,6 +71,10 @@ Windows has the same benchmark with a window: the same scene, the same
 800 x 600 image, the same image check. This lets you put a PC next to the
 SGI machines.
 
+![Windows 11, AMD Ryzen 9 9950X, 32 threads](docs/windows-ryzen9950x.png)
+
+*Windows 11, AMD Ryzen 9 9950X, 32 threads: 0.18 s.*
+
 Download `RayMarchStudioBenchmark-windows-x64.exe` from the
 [Releases](../../releases) page and double-click it. No installation is
 needed. It runs on 64 bit Windows 10 and 11.

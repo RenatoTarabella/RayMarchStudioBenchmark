@@ -7,7 +7,7 @@ the **Rendering** column.
 |---|---|---|---|---|---|---|---|---|
 | Octane, **emulated** (SGIEmu), IRIX 6.5 | 2 x R10000 at 1000 MIPS | rmbenchx, gcc 2.8, MIPS IV n32 | 2 | 43.43 s | 0.53 s | 43.95 s | 11053 | identical (977e953f) |
 | Octane, **emulated** (SGIEmu), IRIX 6.5 | 2 x R10000 at 200 MIPS | rmbenchx, gcc 2.8, MIPS IV n32 | 2 | 234.79 s | 2.65 s | 237.44 s | 2044 | identical (977e953f) |
-| PC, AMD Ryzen 9 9950X, Windows 11 | 16 cores, 32 threads | rmbench.exe, clang 22.1, x86-64 | 32 | 0.19 s | 0.02 s | 0.21 s | ~2526000 | identical (977e953f) |
+| PC, AMD Ryzen 9 9950X, Windows 11 | 16 cores, 32 threads | RayMarchStudioBenchmark.exe, clang 22.1, x86-64 | 32 | 0.18 s | 0.02 s | 0.20 s | 2659650 | identical (977e953f) |
 | PC, AMD Ryzen 9 9950X, Windows 11 | 1 thread | RayMarchStudioBenchmark.exe, clang 22.1, x86-64 | 1 | 2.48 s | 0.02 s | 2.50 s | 193548 | identical (977e953f) |
 
 About the emulated machine: inside an emulator, IRIX's clock advances with
@@ -29,3 +29,7 @@ time is a little pessimistic.*
 
 Real machines: send your `RESULT` line (see the [README](README.md)) and
 it will be added here.
+
+![Windows 11, AMD Ryzen 9 9950X, 32 threads](docs/windows-ryzen9950x.png)
+
+*Windows 11, AMD Ryzen 9 9950X, 32 threads.*
