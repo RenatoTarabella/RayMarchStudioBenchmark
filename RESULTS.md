@@ -22,7 +22,8 @@ timer, not a real clock speed.
 ![Emulated Octane (SGIEmu), 2 processors at 200 MIPS](docs/octane-2cpu-200mips.png)
 
 *Emulated Octane (SGIEmu), 2 processors at 200 MIPS, the speed of a dual
-200 MHz R10000.*
+200 MHz R10000. GNOME was starting while this run was rendering, so the
+time is a little pessimistic.*
 
 Real machines: send your `RESULT` line (see the [README](README.md)) and
 it will be added here.
