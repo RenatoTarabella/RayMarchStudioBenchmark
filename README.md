@@ -2,8 +2,8 @@
 
 A CPU rendering benchmark for **SGI workstations running IRIX**: start it,
 watch the image being built in a window, and compare your machine with
-others. Windows, macOS and Linux versions will follow, so that old and new
-machines can be put side by side.
+others. A Windows version is included too, and macOS and Linux will
+follow, so that old and new machines can be put side by side.
 
 ![Emulated Octane (SGIEmu), 2 processors at 1000 MIPS](docs/octane-2cpu-1000mips.png)
 
@@ -67,8 +67,29 @@ Options (none are needed):
 
 ## Windows
 
-`bin/rmbench.exe` is the command line version for 64 bit Windows. Start it
-from a command prompt.
+Windows has the same benchmark with a window: the same scene, the same
+800 x 600 image, the same image check. This lets you put a PC next to the
+SGI machines.
+
+Download `RayMarchStudioBenchmark-windows-x64.exe` from the
+[Releases](../../releases) page and double-click it. No installation is
+needed. It runs on 64 bit Windows 10 and 11.
+
+- The window shows the image while it renders, then the Rendering, Setup
+  and Total times, the image check and the speed in pixels per second.
+- **Run again** renders again on all the threads.
+- **1 thread** measures one processor only. This is the fairest
+  comparison with an SGI processor.
+- **Copy result** copies the `RESULT` line to the clipboard, ready to
+  post.
+- The image is saved as `rmbench.png` next to the program.
+
+On a modern PC the whole test takes a fraction of a second on all the
+threads and a few seconds on one thread. The times use the
+high-resolution counter of Windows, so they are precise anyway.
+
+`rmbench-windows-x64.exe` is the command line version (options `-t N`,
+`-n`), for scripts.
 
 ## Reading the results
 
