@@ -32,10 +32,10 @@ it will be added here.
 
 **Under investigation**: an O2 (IP32, R12000 at 300 MHz, IRIX 6.5.22m)
 renders the glass without its transparency, so its time (247 s on 1
-processor) does not count yet. The image matches what the renderer gives
-when the C library's `pow()` returns 0, so the suspect is the maths library
-of that system. `test/fptest` checks it: see
-[issue #1](../../issues/1).
+processor) does not count yet. The light that should pass through the glass
+is lost. The maths library of that system is fine (`test/fptest`), and the
+same program gives the correct image on an emulated Octane with 1 thread:
+see [issue #1](../../issues/1).
 
 ![Windows 11, AMD Ryzen 9 9950X, 32 threads](docs/windows-ryzen9950x.png)
 
