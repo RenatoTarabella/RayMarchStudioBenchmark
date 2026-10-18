@@ -58,6 +58,11 @@ Some more details:
 - Run it from a directory you can write to: the image is saved there as
   `rmbench.png`.
 - Close other programs first: the benchmark measures the whole machine.
+- **Use version 1.0.2 or later on a real machine.** In version 1.0,
+  `rmbench` and `rmbenchx` (MIPS IV) rendered the glass without its
+  transparency on a real processor and said "WRONG IMAGE". The cause was a
+  bug in the code that gcc 2.8 generated, and only real hardware showed it:
+  see [issue #1](../../issues/1). The MIPS III programs were not affected.
 
 Options (none are needed):
 
@@ -115,7 +120,7 @@ time does not count.
 The terminal also gets one line that starts with `RESULT`, for example:
 
 ```
-RESULT | rmbench 1.0 | IRIX64 6.5 IP30 | 2 600 MHZ IP30 Processors / CPU: MIPS R10000 Processor Chip Revision: 3.4 | gcc 2.8, MIPS IV n32 | 2 threads | setup 0.53 s | render 43.43 s | total 43.95 s | image identical
+RESULT | rmbench 1.0.2 | IRIX64 6.5 IP30 | 2 600 MHZ IP30 Processors / CPU: MIPS R10000 Processor Chip Revision: 3.4 | gcc 2.8, MIPS IV n32 | 2 threads | setup 0.53 s | render 43.43 s | total 43.95 s | image identical
 ```
 
 ## Send your result
