@@ -100,6 +100,15 @@ high-resolution counter of Windows, so they are precise anyway.
 `rmbench-windows-x64.exe` is the command line version (options `-t N`,
 `-n`), for scripts.
 
+## Which language is fastest?
+
+Want to know which language to use for your programs today? The renderer
+of this benchmark was ported to **C, C++, C#, Rust, Go, Zig and Common
+Lisp**, and every version produces exactly the same image, bit for bit.
+See the results in [LANGUAGES.md](LANGUAGES.md).
+
+![Seven languages, all threads, fastest first](docs/languages-all-threads.jpg)
+
 ## Reading the results
 
 When it finishes, the window shows three times:
