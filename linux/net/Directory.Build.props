@@ -1,0 +1,26 @@
+<Project>
+
+  <!-- RayMarch Studio Benchmark in C# per .NET 10: lo stesso algoritmo del
+       motore C (src/), per confrontare il C con .NET sullo stesso PC.
+       cli/ e' rmbench (riga di comando), gui/ la finestra come rmbenchw.
+       dotnet publish -c Release            -> JIT (ReadyToRun, un file) -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>RmBench</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <TieredPGO>true</TieredPGO>
+    <SatelliteResourceLanguages>none</SatelliteResourceLanguages>
+    <DebugType>none</DebugType>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)engine\*.cs" />
+  </ItemGroup>
+
+</Project>

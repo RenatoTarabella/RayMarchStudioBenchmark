@@ -1,0 +1,21 @@
+# RayMarch Studio Benchmark in Rust: lo stesso algoritmo del motore C (src/)
+# e del port .NET (net/), per confrontare i tre linguaggi sullo stesso PC.
+#   cargo build --release   -> target/release/rmbench-rs.exe
+[package]
+name = "rmbench-rs"
+version = "1.0.2"
+edition = "2021"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "fat"
+panic = "abort"
+debug = false
+strip = true
+
+[[bin]]
+name = "rmbench-rs"
+path = "src/main.rs"

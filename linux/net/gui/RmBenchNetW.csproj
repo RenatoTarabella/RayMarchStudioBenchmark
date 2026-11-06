@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- RayMarchStudioBenchmark-net: la finestra (SDL3, libSDL3.so del sistema), come c/gui.c -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>RayMarchStudioBenchmark-net</AssemblyName>
+  </PropertyGroup>
+
+</Project>

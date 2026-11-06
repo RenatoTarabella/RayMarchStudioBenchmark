@@ -1,0 +1,5 @@
+out/
+c/pgo/
+rust/target/
+net/*/bin/
+net/*/obj/

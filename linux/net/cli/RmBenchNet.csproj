@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- rmbench-net: il benchmark a riga di comando, come bench/rmbench.c -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>rmbench-net</AssemblyName>
+  </PropertyGroup>
+
+</Project>
